@@ -2,6 +2,7 @@ package automationcraft.engine.selenium;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -57,6 +58,10 @@ public class SeleniumBase {
      */
     public void type(String inputText, By locator){
         driver.findElement(locator).sendKeys(inputText);
+    }
+
+    public void typeKey(Keys key, By locator){
+        driver.findElement(locator).sendKeys(key);
     }
 
     /**
