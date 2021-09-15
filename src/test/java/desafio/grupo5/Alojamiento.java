@@ -23,7 +23,7 @@ public class Alojamiento {
     By codSeg = By.xpath("//*[@id=\"formData.paymentData.cardPayments[0].card.securityCode\"]/div/input");
     By DNI = By.xpath("//*[@id=\"formData.paymentData.cardPayments[0].cardHolderIdentification.number\"]/div/input");
     By error = By.xpath("//*[@id=\"formData.paymentData.cardPayments[0].card.number\"]/validation-error/span");
-    By sepDiez = By.xpath("/html/body/div[1]/div/div[5]/div[1]/div[4]/span[10]");
+    By sepDiez = By.xpath("/body/div[1]/div[1]/div[5]/div[2]/div[4]/span[3]");
     By direccion = By.xpath("/html[1]/body[1]/af-app[1]/div[1]/div[1]/div[1]/checkout-form[1]/div[1]/form-component[1]/form[1]/div[1]/payment-component[1]/div[1]/div[1]/payment-method[1]/div[1]/payment-method-selector-container[1]/prepaid-payment-container[1]/div[1]/div[2]/invoice-component[1]/div[1]/div[2]/div[1]/invoice-default-component[1]/div[1]/address[1]/div[1]/div[4]/div[1]/address-street-input[1]/div[1]/div[1]/input-component-v2[1]/div[1]/div[1]/div[1]/input[1]");
     By nombre = By.xpath("/html[1]/body[1]/af-app[1]/div[1]/div[1]/div[1]/checkout-form[1]/div[1]/form-component[1]/form[1]/div[1]/travelers[1]/div[1]/ul[1]/li[1]/ul[1]/li[1]/traveler[1]/div[1]/div[2]/div[1]/div[1]/traveler-first-name-input[1]/div[1]/div[1]/input-component-v2[1]/div[1]/div[1]/div[1]/input[1]");
     By apellido = By.xpath("/html[1]/body[1]/af-app[1]/div[1]/div[1]/div[1]/checkout-form[1]/div[1]/form-component[1]/form[1]/div[1]/travelers[1]/div[1]/ul[1]/li[1]/ul[1]/li[1]/traveler[1]/div[1]/div[2]/div[1]/div[1]/traveler-last-name-input[1]/div[1]/div[1]/input-component-v2[1]/div[1]/div[1]/div[1]/input[1]");
@@ -79,7 +79,7 @@ public class Alojamiento {
                 .click();
         Thread.sleep(500);
         //Se clickea en 17/9/21
-        driver.findElement(By.xpath("/html/body/div[1]/div/div[5]/div[1]/div[4]/span[17]/span[1]"))
+        driver.findElement(By.xpath("/body/div[1]/div[1]/div[5]/div[2]/div[4]/span[10]"))
                 .click();
         Thread.sleep(500);
         //Se clickea en "Aplicar"

@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -73,5 +74,13 @@ public class SeleniumBase {
 
     public void waitForElementAndClick(By localizador){
         wait.until(ExpectedConditions.elementToBeClickable(localizador)).click();
+    }
+    public void sWitchWindows(){
+        for(String winHandle : driver.getWindowHandles()){
+            driver.switchTo().window(winHandle);
+        }
+    }
+    public Select getSelect(By locator){
+        return new Select(driver.findElement(locator));
     }
 }
