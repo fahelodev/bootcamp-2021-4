@@ -24,6 +24,7 @@ public class atc01_prohibirBusquedaDePaquete extends TestBase {
         Assert.assertEquals(entradaMsg,homePage.obtenerMensajeFechaEntrada());
         Assert.assertEquals(salidaMsg,homePage.obtenerMensajeFechaSalida());
 
-
     }
+
+
 }

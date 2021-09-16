@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
@@ -52,10 +50,10 @@ public class SeleniumBase {
         driver.get(url);
     }
 
+    public String getUrl(){
+        return driver.getCurrentUrl();
+    }
     public void enter(By localizador){
         driver.findElement(localizador).sendKeys(Keys.ENTER);
     }
-
-
-
 }
